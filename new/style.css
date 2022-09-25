@@ -4,7 +4,7 @@
 ===========================*/
 :root {
   --font-family: "Inter", sans-serif;
-  --primary: #f86e66;
+  --primary: #008080;
   --primary-dark: #1c3ab6;
   --primary-light: #e2f1ff;
   --accent: #00d4d7;
@@ -77,6 +77,11 @@ img {
 
 a {
   display: inline-block;
+  color: #587a7a;
+}
+
+a:hover, a:active {
+  color: #354c4c;
 }
 
 a,
@@ -326,7 +331,7 @@ p {
 /*===========================
   Section Title Five CSS
 ===========================*/
-.section-title-five {
+.section-title {
   text-align: center;
   max-width: 550px;
   margin: auto;
@@ -335,16 +340,16 @@ p {
   z-index: 5;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .section-title-five {
+  .section-title {
     margin-bottom: 45px;
   }
 }
 @media (max-width: 767px) {
-  .section-title-five {
+  .section-title {
     margin-bottom: 35px;
   }
 }
-.section-title-five h6 {
+.section-title h6 {
   font-weight: 600;
   display: inline-block;
   margin-bottom: 15px;
@@ -353,22 +358,22 @@ p {
   border-radius: 30px;
   padding: 8px 30px;
 }
-.section-title-five h2 {
+.section-title h2 {
   margin-bottom: 15px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .section-title-five h2 {
+  .section-title h2 {
     font-size: 2rem;
     line-height: 2.8rem;
   }
 }
 @media (max-width: 767px) {
-  .section-title-five h2 {
+  .section-title h2 {
     font-size: 1.5rem;
     line-height: 1.9rem;
   }
 }
-.section-title-five p {
+.section-title p {
   color: var(--dark-3);
 }
 
@@ -923,15 +928,28 @@ p {
     padding: 100px 0 60px 0;
   }
 }
-.header-eight .header-image img {
+.header-eight .header-image .logo {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   width: 100%;
-  border-radius: 8px;
+  padding: 17%;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
-  .header-eight .header-image {
-    margin-top: 40px;
+
+.header-eight .header-image {
+  background: url(assets/images/logo-back.svg) no-repeat;
+  background-position: center;
+  height: 400px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .header-eight .header-image .logo {
+    padding: 0;
   }
 }
+
 .header-eight .header-content {
   border-radius: 0;
   position: relative;
@@ -1001,41 +1019,41 @@ p {
 /*===========================
   about-05 css
 ===========================*/
-.about-five {
+.about {
   background-color: var(--light-3);
   padding-top: 120px;
   padding-bottom: 90px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about-five {
+  .about {
     padding-top: 100px;
     padding-bottom:70px;
   }
 }
 @media (max-width: 767px) {
-  .about-five {
+  .about {
     padding-top: 80px;
     padding-bottom:60px;
   }
 }
-.about-five-content{
+.about-content{
   padding-left: 50px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about-five-content {
+  .about-content {
     padding-left: 0;
   }
 }
 @media (max-width: 767px) {
-  .about-five-content {
+  .about-content {
     padding-left: 0;
   }
 }
-.about-five-content .small-title {
+.about-content .small-title {
   position: relative;
   padding-left: 30px;
 }
-.about-five-content .small-title::before {
+.about-content .small-title::before {
   position: absolute;
   content: "";
   left: 0;
@@ -1045,22 +1063,22 @@ p {
   width: 20px;
   margin-top: -1px;
 }
-.about-five-content .main-title {
+.about-content .main-title {
   margin-top: 20px;
 }
-.about-five-content .about-five-tab {
+.about-content .about-tab {
   margin-top: 40px;
 }
-.about-five-content .about-five-tab nav {
+.about-content .about-tab nav {
   border: none;
   background-color: var(--light-1);
   padding: 15px;
   border-radius: 5px;
 }
-.about-five-content .about-five-tab nav .nav-tabs {
+.about-content .about-tab nav .nav-tabs {
   border: none;
 }
-.about-five-content .about-five-tab nav button {
+.about-content .about-tab nav button {
   border: none;
   color: var(--dark-1);
   font-weight: 600;
@@ -1073,76 +1091,76 @@ p {
   text-transform: capitalize;
 }
 @media (max-width: 767px) {
-  .about-five-content .about-five-tab nav button {
+  .about-content .about-tab nav button {
     margin: 0;
     margin-bottom: 10px;
     width: 100%;
   }
-  .about-five-content .about-five-tab nav button:last-child {
+  .about-content .about-tab nav button:last-child {
     margin: 0;
   }
 }
-.about-five-content .about-five-tab nav button:hover {
+.about-content .about-tab nav button:hover {
   color: var(--primary);
 }
-.about-five-content .about-five-tab nav button.active {
+.about-content .about-tab nav button.active {
   background-color: var(--primary);
   color: var(--white);
 }
-.about-five-content .about-five-tab nav button:last-child {
+.about-content .about-tab nav button:last-child {
   margin-right: 0;
 }
-.about-five-content .about-five-tab .tab-content {
+.about-content .about-tab .tab-content {
   border: none;
   padding-top: 30px;
 }
-.about-five-content .about-five-tab .tab-content p {
+.about-content .about-tab .tab-content p {
   margin-bottom: 20px;
 }
-.about-five-content .about-five-tab .tab-content p:last-child {
+.about-content .about-tab .tab-content p:last-child {
   margin: 0;
 }
 
-.about-image-five {
+.about-image {
   padding-left: 60px;
   position: relative;
   z-index: 2;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about-image-five {
+  .about-image {
     margin-bottom: 70px;
     padding-left: 30px;
   }
 }
 @media (max-width: 767px) {
-  .about-image-five {
+  .about-image {
     margin-bottom: 60px;
     padding-left: 0;
   }
 }
-.about-image-five .shape {
+.about-image .shape {
   position: absolute;
   left: 30px;
   top: -30px;
   z-index: -1;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about-image-five .shape {
+  .about-image .shape {
     left: 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about-image-five::before {
+  .about-image::before {
     right: -15px;
     bottom: -15px;
   }
 }
 @media (max-width: 767px) {
-  .about-image-five::before {
+  .about-image::before {
     display: none;
   }
 }
-.about-image-five img {
+.about-image img {
   width: 100%;
   z-index: 2;
 }
@@ -1684,6 +1702,7 @@ p {
 }
 .contact-section .contact-item-wrapper .contact-item .contact-content {
   margin-left: 25px;
+  word-break: break-word;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .contact-section .contact-item-wrapper .contact-item .contact-content {
@@ -1819,14 +1838,14 @@ p {
   color: var(--dark-3);
   margin-top: 20px;
 }
-.footer-eleven .copyright-text {
-  color: var(--dark-3);
-  margin-top: 40px;
+.footer-eleven .copyright-text, .footer-eleven .facebook-link {
   text-align: right;
 }
+.footer-eleven .copyright-text {
+  color: var(--dark-3);
+}
 @media (max-width: 767px) {
-  .footer-eleven .copyright-text {
-    margin-top: 20px;
+  .footer-eleven .copyright-text, .footer-eleven .facebook-link {
     text-align: left;
   }
 }
@@ -1903,4 +1922,22 @@ p {
 .footer-eleven .newsletter-form .sub-btn:hover {
   color: var(--white);
   background-color: var(--primary-dark);
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+.footer-area .logo img {
+  width: 190px;
+}
+
+.facebook-link a svg {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+
+.facebook-link a:hover {
+  color: #fff; 
 }

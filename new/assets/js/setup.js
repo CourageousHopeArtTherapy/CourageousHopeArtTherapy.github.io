@@ -7,7 +7,7 @@ navbarTogglerNine.addEventListener("click", function () {
 
 // ==== left sidebar toggle
 let sidebarLeft = document.querySelector(".sidebar-left");
-let overlayLeft = document.querySelector(".overlay-left");
+/*let overlayLeft = document.querySelector(".overlay-left");
 let sidebarClose = document.querySelector(".sidebar-close .close");
 
 overlayLeft.addEventListener("click", function () {
@@ -26,3 +26,4 @@ sideMenuLeftNine.addEventListener("click", function () {
   sidebarLeft.classList.add("open");
   overlayLeft.classList.add("open");
 });
+*/
