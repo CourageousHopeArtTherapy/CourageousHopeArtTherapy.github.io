@@ -58,16 +58,6 @@
         });
     });
 
-
-    document.querySelectorAll('#about button.nav-link').forEach(btn => 
-        btn.onclick =  function() {
-            let imageId = this.id.replace('nav-', '').replace('-tab', '');
-            imageId = '#about-image-' + imageId;
-            document.querySelector(`.about-image img:not(${imageId})`).classList.add('d-none');
-            document.querySelector(imageId).classList.remove('d-none');
-        }
-    );
-
     "use strict";
 
 }) ();

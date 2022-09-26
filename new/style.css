@@ -980,7 +980,6 @@ p {
 .header-eight .header-content p {
   margin-top: 30px;
   color: var(--white);
-  opacity: 0.7;
 }
 .header-eight .button {
   margin-top: 40px;
@@ -1805,11 +1804,6 @@ p {
     padding-bottom: 70px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .footer-eleven .footer-widget {
-    margin-top: 40px;
-  }
-}
 @media (max-width: 767px) {
   .footer-eleven .footer-widget {
     margin-top: 40px;
@@ -1846,7 +1840,7 @@ p {
 }
 @media (max-width: 767px) {
   .footer-eleven .copyright-text, .footer-eleven .facebook-link {
-    text-align: left;
+    text-align: center;
   }
 }
 .footer-eleven .copyright-text a {
