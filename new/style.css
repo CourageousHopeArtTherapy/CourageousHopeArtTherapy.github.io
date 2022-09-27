@@ -1374,11 +1374,12 @@ p {
   border-radius: 30px;
   font-size: 16px;
 }
+.pricing-style-fourteen .title.highlighted {
+  color: var(--white);
+  background-color: var(--primary);
+}
 .pricing-style-fourteen .table-head p {
   color: var(--dark-3);
-}
-.pricing-style-fourteen .price {
-  padding-top: 30px;
 }
 .pricing-style-fourteen .amount {
   font-weight: 600;
