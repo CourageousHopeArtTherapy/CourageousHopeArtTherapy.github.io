@@ -1346,9 +1346,10 @@ p {
   margin-top: 30px;
   background-color: var(--white);
   transition: all 0.4s ease;
-  padding: 50px 35px;
+  padding: 50px 25px;
   text-align: center;
   z-index: 0;
+  height: calc(100% - 30px);
 }
 .pricing-style-fourteen:hover {
   box-shadow: var(--shadow-4);
@@ -1385,6 +1386,12 @@ p {
   padding-left: 15px;
   font-size: 55px;
 }
+
+.pricing-style-fourteen .amount.amount-text {
+  line-height: 0.9;
+  margin: 0.25em 0;
+}
+
 .pricing-style-fourteen .currency {
   font-weight: 400;
   color: var(--dark-3);
