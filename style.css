@@ -1951,6 +1951,11 @@ p {
   visibility: hidden;
 }
 
+.alert-light {
+  background-color: #f1f1f1;
+  border-color: #d8d8d8;
+}
+
 /*.about-image img:nth-of-type(1), .about-image img:nth-of-type(2) {
   position: absolute;
   animation-timing-function: ease-in-out;
